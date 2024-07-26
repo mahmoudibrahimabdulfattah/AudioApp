@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_open_files"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Files" />
+
+    <TextView
+        android:id="@+id/currently_playing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Currently Playing: None" />
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+</LinearLayout>
